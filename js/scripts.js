@@ -1,6 +1,18 @@
+function check() {
+    alert("Hello there, wellcome to your js test");
+}
+
+
+
+
+
+
+
+
+/*
 $(document).ready(function() {
     $("#blanks form").submit(function(event) {
-        var answerInput = $("input:radio[name=flavour]:checked").val();
+        var answerInput = $("input:radio[name=answer]:checked").val();
         $(".answer").text(answerInput);
 
         $("#scoreresults").show();
@@ -8,7 +20,7 @@ $(document).ready(function() {
         event.preventDefault();
     });
 });
-
+*/
 
 
 /*
