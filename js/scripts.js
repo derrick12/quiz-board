@@ -1,6 +1,24 @@
 function check(event) {
-    document.getElementById("scoreResults").style.visibility = "visible";
 
+    var q1 = document.quiz.q1.value;
+    var q2 = document.quiz.q2.value;
+    var q3 = document.quiz.q3.value;
+    var score = 0;
+
+    if (q1 == "HTML") {
+        score++;
+    }
+
+    if (q2 == "ECMAscript") {
+        score++;
+    }
+
+    if (q3 == "NO") {
+        score++;
+    }
+
+    document.getElementById("scoreResults").style.visibility = "visible";
+    document.getElementById("displayScore").innerHTML = "Your quiz score is :" + score;
     event.preventDefault();
 }
 
