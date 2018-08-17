@@ -1,5 +1,7 @@
-function check() {
-    alert("Hello there, wellcome to your js test");
+function check(event) {
+    document.getElementById("scoreResults").style.visibility = "visible";
+
+    event.preventDefault();
 }
 
 
