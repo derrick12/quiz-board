@@ -17,8 +17,26 @@ function check(event) {
         score++;
     }
 
+    var comments = ["Great Work!", "Average.", "You can do better."];
+
+    var range = 0;
+
+    if (score < 1) {
+        range = 2;
+    }
+
+    if (score > 0 && score < 3) {
+        range = 1;
+    }
+
+    if (score > 2) {
+        range = 0;
+    }
+
     document.getElementById("scoreResults").style.visibility = "visible";
-    document.getElementById("displayScore").innerHTML = "Your quiz score is :" + score;
+
+    document.getElementById("comments").innerHTML = comments[range];
+    document.getElementById("displayScore").innerHTML = "Your quiz score is : " + score;
     event.preventDefault();
 }
 
