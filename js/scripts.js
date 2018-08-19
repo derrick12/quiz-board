@@ -17,7 +17,31 @@ function check(event) {
         score++;
     }
 
+    if (q4 == "Js") {
+        score++;
+    }
+
+    if (q5 == "YES") {
+        score++;
+    }
+
+
+    if (q6 == "script tag") {
+        score++;
+    }
+
+    if (q7 == "false") {
+        score++;
+    }
+
+    if (q7 == "Conditional statements") {
+        score++;
+    }
+
+
+
     var comments = ["Great Work!", "Average.", "You can do better."];
+    var images = ["img/high_five.gif", "img/meh.gif", "img/sad.gif"];
 
     var range = 0;
 
@@ -25,11 +49,11 @@ function check(event) {
         range = 2;
     }
 
-    if (score > 0 && score < 3) {
+    if (score > 0 && score < 4) {
         range = 1;
     }
 
-    if (score > 2) {
+    if (score > 4) {
         range = 0;
     }
 
@@ -37,6 +61,7 @@ function check(event) {
     document.getElementById("quiz").style.visibility = "hidden"
 
     document.getElementById("comments").innerHTML = comments[range];
+    document.getElementById("image").src = images[range];
     document.getElementById("displayScore").innerHTML = "Your quiz score is : " + score;
     event.preventDefault();
 }

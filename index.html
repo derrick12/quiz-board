@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,36 +16,86 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>QUIZ BOARD.</h1>
-
-        <form id="quiz" name="quiz">
-
-            <p>Q1: What is the shortform of HTML ?</p>
-            <input type="radio" id="choice" name="q1" value="HTML"> HTML <br>
-            <input type="radio" id="choice" name="q1" value="HMLT"> HMLT <br>
-            <input type="radio" id="choice" name="q1" value="MLHT"> MLHT <br>
-            <br>
-            <p>Q2: What is the the other name of Javascript ?</p>
-            <input type="radio" id="choice" name="q2" value="ECMAscript"> ECMAscript <br>
-            <input type="radio" id="choice" name="q2" value="JS"> JS <br>
-            <input type="radio" id="choice" name="q2" value="I don't Know"> I don't Know <br>
-            <br>
-            <p>Q3: Is C + + a low level language ?</p>
-            <input type="radio" id="choice" name="q3" value="YES"> YES <br>
-            <input type="radio" id="choice" name="q3" value="NO"> NO <br>
-            <br>
-            <input id="button" type="button" value="Finished The Test!" onclick="check();">
-
-        </form>
-
-        <div id="scoreResults">
-            <h1>Score!</h1>
-            <p id="comments"></p>
-            <p id="displayScore"></p>
-        </div>
-
+    <div class="jumbotron" style="background-color: rgba(245, 245, 245, 0.4);">
+        <h1>Javascript Quiz.</h1>
     </div>
+    <div class="container">
+        <div>
+            <form id="quiz" name="quiz">
+                <div>
+                    <p class="bg-success">Q1: What is the shortform of HTML ?</p>
+                    <input type="radio" id="choice" name="q1" value="HTML"> HTML <br>
+                    <input type="radio" id="choice" name="q1" value="HMLT"> HMLT <br>
+                    <input type="radio" id="choice" name="q1" value="MLHT"> MLHT <br>
+                    <br>
+                    <p class="bg-success">Q2: What is the the other name of Javascript ?</p>
+                    <input type="radio" id="choice" name="q2" value="ECMAscript"> ECMAscript <br>
+                    <input type="radio" id="choice" name="q2" value="JS"> JS <br>
+                    <input type="radio" id="choice" name="q2" value="I don't Know"> I don't Know <br>
+                    <br>
+                    <p class="bg-success">Q3: Is C + + a low level language ?</p>
+                    <input type="radio" id="choice" name="q3" value="YES"> YES <br>
+                    <input type="radio" id="choice" name="q3" value="NO"> NO <br>
+
+
+                    <p class="bg-success">Q4: JavaScript has an Extension of ?</p>
+                    <input type="radio" id="choice" name="q4" value="Java"> Java <br>
+                    <input type="radio" id="choice" name="q4" value="Js"> Js <br>
+                    <input type="radio" id="choice" name="q4" value="Javascript"> Javascript <br>
+                    <br>
+                    <p class="bg-success">Q5:Is Javascript case sensitive ?</p>
+                    <input type="radio" id="choice" name="q5" value="YES"> YES <br>
+                    <input type="radio" id="choice" name="q5" value="NO"> NO <br>
+                    <br>
+                    <p class="bg-success">Q6: How can we start Javascript ?</p>
+                    <input type="radio" id="choice" name="q6" value="language tag"> language tag <br>
+                    <input type="radio" id="choice" name="q6" value="script tag"> script tag <br>
+                    <input type="radio" id="choice" name="q6" value="javascript tag"> javascript tag <br>
+                    <br>
+                    <p class="bg-success">Q7: The external JavaScript file must contain the script tag. ?</p>
+                    <input type="radio" id="choice" name="q7" value="true"> true <br>
+                    <input type="radio" id="choice" name="q7" value="false"> false <br>
+                    <br>
+                    <p class="bg-success">Q8: What elements are used to test for TRUE or False values stored in variables ?</p>
+                    <input type="radio" id="choice" name="q8" value="Trigger readers"> Trigger readers <br>
+                    <input type="radio" id="choice" name="q8" value="Conditional statements"> Conditional statements <br>
+                    <input type="radio" id="choice" name="q8" value="Comparison and logical operators"> Comparison and logical operators <br>
+                    <br>
+
+
+
+                </div>
+
+
+                <br>
+                <input id="button" type="button" value="Finished The Test!" onclick="check();">
+
+            </form>
+
+            <div id="scoreResults" class="panel panel-info">
+                <div class="panel-heading">
+                    <h2 class="panel-title">YOUR SCORE!</h2>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <p id="comments"></p>
+                        </li>
+                        <li>
+                            <p id="displayScore"></p>
+                        </li>
+                        <img id="image">
+                    </ul>
+                </div>
+
+                <div class="panel-footer">
+                    <p>JavaScript Quiz!</p>
+                </div>
+            </div>
+
+
+
+        </div>
 </body>
 
 </html>
