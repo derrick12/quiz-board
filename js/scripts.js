@@ -13,32 +13,32 @@ function check(event) {
         score++;
     }
 
-    if (q3 == "NO") {
+    if (q3 == "head") {
         score++;
     }
 
     var comments = ["Great Work!", "Average.", "You can do better."];
     var images = ["img/high_five.gif", "img/meh.gif", "img/sad.gif"];
 
-    var range = 0;
+    var comRange = 0;
 
     if (score < 1) {
-        range = 2;
+        comRange = 2;
     }
 
     if (score > 0 && score < 3) {
-        range = 1;
+        comRange = 1;
     }
 
     if (score > 2) {
-        range = 0;
+        comRange = 0;
     }
 
     document.getElementById("scoreResults").style.visibility = "visible";
     document.getElementById("quiz").style.visibility = "hidden"
 
-    document.getElementById("comments").innerHTML = comments[range];
-    document.getElementById("image").src = images[range];
+    document.getElementById("comments").innerHTML = comments[comRange];
+    document.getElementById("image").src = images[comRange];
     document.getElementById("displayScore").innerHTML = "Your quiz score is : " + score;
     event.preventDefault();
 }

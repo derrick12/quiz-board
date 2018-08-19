@@ -9,10 +9,10 @@ This website is an online quiz of javascript, that allows the user to answer que
 * Clone the repository to a local directory
 * open the index.html file using the browser to view the website.
 
-## Live Webpage at : https://derrick12.github.io/portfolio-page/
+## Live Webpage at : https://derrick12.github.io/quiz-board/
 
 ## Technologies Used
-I have built the website using HTML and used CSS for styling of the website.
+I have built the website using Javascript and HTML, CSS for styling of the website.
 
 ## Support and contact details
 Feel free to cantact me incase of any issues at derrickwaweru@gmail.com
