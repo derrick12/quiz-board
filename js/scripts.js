@@ -34,6 +34,7 @@ function check(event) {
     }
 
     document.getElementById("scoreResults").style.visibility = "visible";
+    document.getElementById("quiz").style.visibility = "hidden"
 
     document.getElementById("comments").innerHTML = comments[range];
     document.getElementById("displayScore").innerHTML = "Your quiz score is : " + score;
