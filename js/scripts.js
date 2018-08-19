@@ -5,7 +5,7 @@ function check(event) {
     var q3 = document.quiz.q3.value;
     var score = 0;
 
-    if (q1 == "HTML") {
+    if (q1 == "script") {
         score++;
     }
 
@@ -33,6 +33,7 @@ function check(event) {
     if (score > 2) {
         comRange = 0;
     }
+
 
     document.getElementById("scoreResults").style.visibility = "visible";
     document.getElementById("quiz").style.visibility = "hidden"
