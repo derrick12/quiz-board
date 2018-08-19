@@ -1,5 +1,5 @@
 # JAVASCRIPT QUIZ BOARD
-####   This a website that allows the user to answer questions from a multiple choice and display the results, 17th August 2018.
+####   This a website that allows the user to answer questions from a multiple choice questions and display the results, 17th August 2018.
 #### By Derrick Kariuki.
 ## Description
 This website is an online quiz of javascript, that allows the user to answer questions from a multiple choice and display the results. I have built the website using HTML and used CSS for styling of the website.
